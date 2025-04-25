@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEW Designs | Graphic Design Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- ScrollReveal.js -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Particles.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    :root {
+      --red: #e63946;
+      --burgundy: #c12a37;
+      --gold: #d4af37;
+      --amber: #b58a1e;
+      --black: #000000;
+      --white: #ffffff;
+      --ash: #f4f4f4;
+      --yellow: #f1c40f;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background-color: var(--ash); color: var(--black); overflow-x: hidden; }
+    #particles { position: fixed; width: 100%; height: 100%; z-index: -2; }
+    header { position: relative; }
+    header .content { position: relative; z-index: 2; padding: 100px 20px; text-align: center; color: var(--white); background: rgba(0,0,0,0.5); }
+    header { background: url('https://cdn.discordapp.com/attachments/1139370302807699507/1233039792033210459/logo_1.jpg') center/cover no-repeat; }
+    nav { background: var(--black); display: flex; justify-content: center; padding: 15px 0; position: sticky; top:0; z-index:1000; }
+    nav a { color: var(--white); margin: 0 20px; text-decoration: none; font-weight:600; transition: color .3s; }
+    nav a:hover { color: var(--gold); }
+    section { padding: 80px 20px; max-width:1100px; margin:auto; }
+    section:nth-child(even) { background: var(--ash); }
+    .card { background: var(--white); padding:30px; border-radius:10px; box-shadow:0 5px 20px rgba(0,0,0,0.1); text-align:center; }
+    h2 { color: var(--red); font-size:2rem; margin-bottom:20px; text-align:center; }
+    ul.services-list, ul.tools-list { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+    ul.services-list li, ul.tools-list li { background: var(--white); padding:20px; border-radius:8px; text-align:center; box-shadow:0 3px 10px rgba(0,0,0,0.1); transition: transform .3s, box-shadow .3s; }
+    ul.services-list li:hover { transform: translateY(-5px); box-shadow:0 5px 20px rgba(193,42,55,0.3); }
+    ul.services-list li svg { width:40px; height:40px; margin-bottom:10px; fill:var(--gold); }
+    .portfolio-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .portfolio-grid img { width:100%; border-radius:10px; transition:transform .3s; }
+    .portfolio-grid img:hover { transform: scale(1.05); }
+    .testimonial { margin-bottom:20px; }
+    .testimonial .card { border-left:5px solid var(--red); }
+    .contact-form form { display:flex; flex-direction:column; gap:15px; }
+    .contact-form input, .contact-form textarea { padding:12px; border:1px solid #ccc; border-radius:5px; }
+    .contact-form button { background:var(--gold); color:var(--black); padding:12px; border:none; border-radius:5px; cursor:pointer; transition:background .3s; }
+    .contact-form button:hover { background: var(--amber); }
+    footer { text-align:center; padding:30px 20px; background:var(--black); color:var(--white); }
+  </style>
+</head>
+<body>
+  <div id="particles"></div>
+  <header>
+    <div class="content">
+      <h1>LEW Designs</h1>
+      <p>Learn - Earn - Win through Design</p>
+      <button onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })" style="padding:12px 24px; background:var(--red); color:var(--white); border:none; border-radius:5px; cursor:pointer; transition:background .3s;">Explore Services</button>
+    </div>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#tools">Tools</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30"/></svg><p>Logo Design</p></li>
+      <li><svg viewBox="0 0 64 64"><rect x="12" y="12" width="40" height="40"/></svg><p>Mockups</p></li>
+      <li><svg viewBox="0 0 64 64"><polygon points="32,4 60,60 4,60"/></svg><p>Branding</p></li>
+      <li><svg viewBox="0 0 64 64"><path d="M8 8h48v48H8z"/></svg><p>Brand Identity</p></li>
+      <li><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="20"/></svg><p>Package Design</p></li>
+      <li><svg viewBox="0 0 64 64"><rect x="16" y="16" width="32" height="32"/></svg><p>Posters</p></li>
+      <li><svg viewBox="0 0 64 64"><ellipse cx="32" cy="32" rx="20" ry="12"/></svg><p>Thumbnails</p></li>
+      <li><svg viewBox="0 0 64 64"><path d="M8 32h48"/></svg><p>Social Media Graphics</p></li>
+      <li><svg viewBox="0 0 64 64"><path d="M32 8v48"/></svg><p>Infographics</p></li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Us</h2>
+      <p>LEW Designs is a creative graphic design company focused on delivering powerful visual experiences. Our mission is to empower brands through high-quality design work that speaks volumes. We believe that good design is good business.</p>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>Tools We Use</h2>
+    <ul class="tools-list">
+      <li>Adobe Suite (Photoshop, Illustrator, InDesign, XD)</li>
+      <li>Microsoft Suite (PowerPoint, Word, Excel)</li>
+      <li>Figma</li>
+      <li>Canva</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-grid">
+      <img src="https://cdn.discordapp.com/attachments/1139370302807699507/1233039792033210459/logo_1.jpg" alt="Logo Design">
+      <img src="https://cdn.discordapp.com/attachments/1139370302807699507/1233040172768137356/brand_id.png" alt="Brand Identity">
+      <img src="https://cdn.discordapp.com/attachments/1139370302807699507/1233040873809186836/poster.png" alt="Poster Design">
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial card"><p>"LEW Designs transformed our brand completely. Professional and on time!" - TechNova Inc.</p></div>
+    <div class="testimonial card"><p>"Creative, flexible, and a joy to work with. Highly recommend!" - BrightBox Media</p></div>
+  </section>
+
+  <section id="contact">
+    <div class="card contact-form">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/myzwzgda" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Email: contact@lewdesigns.com | Phone: +919966023223</p>
+      <p>Follow us: Instagram | LinkedIn | Behance | Guithub </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LEW Designs. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Initialize Particles
+    particlesJS.load('particles', 'https://gist.githubusercontent.com/username/gistid/raw/particles-config.json', function() {
+      console.log('Particles.js loaded');
+    });
+    // ScrollReveal animations
+    ScrollReveal().reveal('section', { distance: '50px', duration: 800, easing: 'ease-in-out', interval: 200 });
+  </script>
+</body>
+</html>
