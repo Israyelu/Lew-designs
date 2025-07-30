@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Israyelu Kodem</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #f3f4f6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #2E7D32; /* Green background */
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: gold; /* Name in gold */
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2E7D32; /* Green links */
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: gold; /* Hover effect in gold */
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white; /* White background for sections */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease-in-out;
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #2E7D32; /* Green headings */
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .skills, .education, .experience {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .skills div, .education div, .experience div {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .skills div:hover, .education div:hover, .experience div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2E7D32; /* Green footer */
+      color: white;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0;
+    }
+    footer p span {
+      color: gold; /* Footer name in gold */
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Israyelu Kodem</h1>
+    <p>Designer & Data Analyst</p>
+    <p>
+      <a href="https://www.linkedin.com/in/israyelu-kodem" target="_blank" style="color: white; text-decoration: none;">
+        LinkedIn Profile
+      </a>
+    </p>
+  </header>
+  <nav>
+
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      To achieve a responsible position and personal goals by exploring myself more efficiently in
+      an industry with full determination and expand my knowledge by working hard and learning
+      new technologies.
+    </p>
+  </section>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div>
+        <strong>MBA - Finance</strong><br>
+        Kakatiya University School of Learning<br>
+        Year of Passing: 2025 | Percentage: 68%
+      </div>
+      <div>
+        <strong>B.Sc (Botany, Zoology, Computer Science)</strong><br>
+        Sidhartha Degree and PG College<br>
+        Year of Passing: 2023 | Percentage: 68.7%
+      </div>
+      <div>
+        <strong>Intermediate - BiPC</strong><br>
+        Kakatiya Graduates Jr. College, Narsampet<br>
+        Year of Passing: 2019 | Percentage: 63%
+      </div>
+      <div>
+        <strong>SSC</strong><br>
+        Mother’s Land High School, Narsampet<br>
+        Year of Passing: 2017 | Percentage: 78%
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div>Cloud Platforms: AWS (Elastic Beanstalk, EC2 – basic knowledge)</div>
+      <div>Web Technologies: HTML, CSS (Static website design)</div>
+      <div>Programming: C, C++ (Basic problem solving)</div>
+      <div>Data Tools: Excel (analysis), Tableau (dashboard creation)</div>
+      <div>Design Tools: Photoshop, Adobe Suite</div>
+      <div>Other Tools: Fast typing (Telugu), DTP, MS Office Suite</div>
+    </div>
+  </section>
+  <section id="experience">
+    <h2>Virtual Experience Programs</h2>
+    <div class="experience">
+      <div>
+        <h3>AWS APAC Solutions Architecture</h3>
+        <p>Designed scalable hosting architecture using Elastic Beanstalk. Described technical and cost aspects of the proposed system.</p>
+        <a href="aws-project-details.html" style="color: white; background: #2E7D32; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none;">View Details</a>
+      </div>
+      <div>
+        <h3>Citi Investment Banking Simulation</h3>
+        <p>Built company profiles and projections as a buy-side analyst. Drafted comparative analysis for retail sector investment.</p>
+        <a href="citi-project-details.html" style="color: white; background: #2E7D32; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none;">View Details</a>
+      </div>
+      <div>
+        <h3>Deloitte Data Analytics Simulation</h3>
+        <p>Created interactive dashboards with Tableau. Analyzed and classified Excel data to draw insights.</p>
+        <a href="deloitte-project-details.html" style="color: white; background: #2E7D32; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none;">View Details</a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Contact</h2>
+    <p style="text-align: center;"><strong>Address:</strong> Narsampet, Warangal Rural, Telangana – 506132</p>
+    <p style="text-align: center;"><strong>Phone:</strong> +91 9063725957</p>
+    <p style="text-align: center;"><strong>Email:</strong> <a href="mailto:israyelu8420@gmail.com" style="color: #2E7D32; text-decoration: underline;">israyelu8420@gmail.com</a></p>
+  
+    
+    <form style="max-width: 600px; margin: auto; padding: 1rem; background: #f9f9f9; border: 2px solid #2E7D32; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      <h2 style="text-align: center; margin-bottom: 1rem;">Get in Touch</h2>
+      <div style="border: 1px solid #ccc; border-radius: 5px; padding: 1rem;">
+      <label for="name" style="display: block; margin-bottom: 0.5rem;">Name:</label>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <div style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 5px; padding: 1rem;">
+      <label for="email" style="display: block; margin-bottom: 0.5rem;">Email:</label>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      <div style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 5px; padding: 1rem;">
+      <label for="message" style="display: block; margin-bottom: 0.5rem;">Message:</label>
+      <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      </div>
+      <div style="margin-top: 1rem; text-align: center;">
+      <button type="submit" style="background: #2E7D32; color: white; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+      </div>
+    </div>
+  </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 <span>Israyelu Kodem</span>. All rights reserved.</p>
+  </footer>
+</body>
+</html>
